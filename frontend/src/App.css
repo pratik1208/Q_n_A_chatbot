@@ -1,0 +1,135 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.appBlock {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.questionLabel,
+.fileLabel {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.questionInput,
+.fileInput {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.spinner {
+  border: 2px solid #fff; /* Lighter border for visibility against the button's color */
+  border-top-color: transparent; /* Make the top border transparent */
+  border-right-color: transparent; /* Optional: Make right border transparent for a different style */
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.submitBtn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex; /* Changed to inline-flex to center spinner and text */
+  align-items: center;
+  justify-content: center;
+  width: auto; /* Ensure button width is based on content */
+  min-width: 100px; /* Minimum width to prevent shrinking on spinner display */
+}
+.submitBtn:disabled {
+  background-color: #ccc;
+}
+
+.resultOutput {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+
+
+.submitBtnSubmitting {
+  background-color: #ccc;
+  /* Grey color */
+}
+
+/* You might want to revert to the primary color when not submitting */
+.submitBtn:not(.submitBtnSubmitting) {
+  background-color: #007bff;
+  /* Original blue color */
+}
+
+
+
+
